@@ -18,7 +18,7 @@ class BdpLocalAdapter extends BdpTaskAdapter {
       shell: true,
       env: process.env
     });
-    RunningProcess.on("exit", (code, signal) => this.emitJobStatus(jobObj.jobId, code, signal));
+    RunningProcess.on("exit", (code, signal) => this.emitJobStatus(jobObj.jobId, code, signal).catch(console.log));
     return {
       runningJobId: RunningProcess.pid,
       stdoutStream: RunningProcess.stdout,
