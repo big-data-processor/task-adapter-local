@@ -1,6 +1,6 @@
 {
   "name": "@big-data-processor/task-adapter-local",
-  "version": "0.9.18-patch.1",
+  "version": "0.9.19",
   "description": "An adapter for direct task executions on local machine.",
   "main": "index.js",
   "scripts": {
@@ -16,6 +16,6 @@
     "description": "A generic adapter to direct execute commands on the BDP hosted server."
   },
   "dependencies": {
-    "@big-data-processor/task-adapter-base": "^0.9.18-patch.1"
+    "@big-data-processor/task-adapter-base": "^0.9.19"
   }
 }
